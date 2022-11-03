@@ -7,9 +7,9 @@
   - 解法:
     step1: Declare *ListNode slice
     step2: 將所有*ListNode節點存進slice
-	step3: 將slice裡的元素重新排序
-    step3: 將slice裡元素的Next指向下一個節點
-	step4: 回傳slice[0]即是答案
+    step3: 將slice裡的元素重新排序
+    step4: 將slice裡元素的Next指向下一個節點
+    step5: 回傳slice[0]即是答案
     時間複雜度: O(n^2)
     空間複雜度: O(n)
 */
