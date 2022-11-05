@@ -18,6 +18,8 @@
 	step2: 將最後一個元素的Next等於head
 	step3: 將head和tail進行rotate len-k次
 	step4: 設定tail.next = nil 並回傳head即是答案
+	時間複雜度: O(n)
+	空間複雜度: O(1)
 */
 
 // @lc code=start
