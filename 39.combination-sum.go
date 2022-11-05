@@ -8,9 +8,12 @@
   - Output: Combinations(sum equal target)
 
   - 解法:
-
-    時間複雜度: O(log n)
-    空間複雜度: O(1)
+	Use backtracking algorithm.
+	step1: 路徑要填的即為選取的 candidates
+	step2: 選擇清單為candidates當前和之後的元素
+	step3: 終止條件即路徑內的總和大於等於 target 
+    時間複雜度: O(2^n)
+    空間複雜度: O(2^n)
 */
 
 // @lc code=start
@@ -26,16 +29,16 @@ func combinationSum(candidates []int, target int) [][]int {
 
 	return results
 }
-
-func backtrack(results *[][]int, nums []int, result []int, start_index int, target int) {
+ result []int
+func backtrack(results *[][]int, nums []int,, start_index int, target int) {
 	if target < 0 {
 		return
 	}
 
 	if target == 0 {
-		// temp := make([]int, len(result))
-		// copy(temp, result)
-		*results = append(*results, result)
+		temp := make([]int, len(result))
+		copy(temp, result)
+		*results = append(*results, temp)
 	}
 
 	for i := start_index; i < len(nums); i++ {
