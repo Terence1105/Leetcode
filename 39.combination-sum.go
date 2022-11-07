@@ -11,7 +11,7 @@
 	Use backtracking algorithm.
 	step1: 路徑要填的即為選取的 candidates
 	step2: 選擇清單為candidates當前和之後的元素
-	step3: 終止條件即路徑內的總和大於等於 target 
+	step3: 終止條件即路徑內的總和大於等於 target
     時間複雜度: O(2^n)
     空間複雜度: O(2^n)
 */
@@ -29,8 +29,8 @@ func combinationSum(candidates []int, target int) [][]int {
 
 	return results
 }
- result []int
-func backtrack(results *[][]int, nums []int,, start_index int, target int) {
+
+func backtrack(results *[][]int, nums []int, result []int, start_index int, target int) {
 	if target < 0 {
 		return
 	}
