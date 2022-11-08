@@ -17,6 +17,8 @@
     Use maximum-heap data structure
 	step1: 將所有元素依序存到heap裡
 	step2: 執行HeapSort後 即是答案
+	時間複雜度: O(nlogn)
+	空間複雜度: O(n)
 */
 
 // @lc code=start
