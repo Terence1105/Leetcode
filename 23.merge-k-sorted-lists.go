@@ -4,7 +4,7 @@
  * [23] Merge k Sorted Lists
   - Input: An array of k linked-lists lists, each linked-list is sorted in ascending order.
   - Output: One sorted linked-list
-  - 解法:
+  - 第一種解法:
     step1: Declare *ListNode slice
     step2: 將所有*ListNode節點存進slice
     step3: 將slice裡的元素重新排序
@@ -12,6 +12,11 @@
     step5: 回傳slice[0]即是答案
     時間複雜度: O(n^2)
     空間複雜度: O(n)
+
+  - 第二種解法:
+    Use maximum-heap data structure
+	step1: 將所有元素依序存到heap裡
+	step2: 執行HeapSort後 即是答案
 */
 
 // @lc code=start
